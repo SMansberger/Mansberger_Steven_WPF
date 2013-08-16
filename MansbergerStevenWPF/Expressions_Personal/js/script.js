@@ -1,6 +1,6 @@
 /* Steven Mansberger
 08.15.2013
-Expression Worksheet */
+Expression_Personal */
 
 alert("We are going to calculate how many characters you type in a given year!");
 var wpmInput = prompt("Enter your average WPM: ");
