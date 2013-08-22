@@ -61,6 +61,12 @@ Did not function. Unsure if you cannot add multiple conditions as with Java or n
 */
 if(tier==0 && division==1){
 	alert("Congratulations! You are already in Challenger I and are being considered for professional League competition!");
+}else if((tier==1) && (division==2)){
+	
+	gamesRequired = 7;
+	console.log("If you win " + gamesRequired + " games, you will have a chance of going pro! Nice Job!");
+	alert("If you win " + gamesRequired + " games, you will have a chance of going pro! Nice Job!");
+	
 }else if(tier>6 || tier<1){
 	alert("You did not enter a correct Tier/Division designation.");
 }else if(division>5 || division<1){
