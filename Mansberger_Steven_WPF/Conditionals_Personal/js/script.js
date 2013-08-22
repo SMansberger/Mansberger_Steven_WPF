@@ -21,12 +21,14 @@ alert("We are going to see how many games you must win to become a professional 
 var playerTier=prompt("Please enter your current placement tier (e.g. Silver, Gold, Platinum...): ", "Bronze");
 
 if(playerTier=="Bronze" || playerTier=="bronze"){ 
-	tier=4;
+	tier=5;
 }else if(playerTier=="Silver" || playerTier=="silver"){
-	tier=3;
+	tier=4;
 }else if(playerTier=="Gold" || playerTier=="gold"){
-	tier=2;
+	tier=3;
 }else if(playerTier=="Platinum" || playerTier=="platinum" || playerTier=="Plat" || playerTier=="plat"){
+	tier=2;
+}else if(playerTier=="Diamond" || playerTier=="diamond"){
 	tier=1;
 }else if(playerTier=="Challenger" || playerTier=="challenger"){
 	tier=0;
@@ -59,6 +61,6 @@ if(tier==1 && division==1){
 These values will be added separately to the proper variable at the end of the script so as to not skew the gamesRequired calculations.
 No points are added during these placement matches*/
 
-placementGames = (tier
+placementGames = ((tier * 3) +  (division * 2) * tier);
 
 }
