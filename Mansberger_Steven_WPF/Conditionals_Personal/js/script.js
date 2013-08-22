@@ -9,7 +9,8 @@ To become considered for a pro team, you must make it to the highest division of
 Points are awareded for each game won. You must reach a total of 100 points in a division to place into the next division.
 Once you have earned 100 points to place, you must win the next 2 out of 3 games to advance. 
 Once you reach 100 points of the highest division of a tier, such as, Silver I, you must win 3 of the next 5 games to place into Gold V.
-We will assume you win 20 points per game, for the sake of Math =)*/
+We will assume you win 20 points per game, for the sake of Math =)
+We will also assume each player beings with 0 points for each given division within their tier*/
 
 var tier = 1;
 var division = 1;
