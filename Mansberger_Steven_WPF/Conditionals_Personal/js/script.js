@@ -31,7 +31,7 @@ if(playerTier=="Bronze" || playerTier=="bronze"){
 	tier = 5;
 }else{
 	alert("You did not enter a correct tier designation.");
-
+}
 //prompting user for division placeent. Taking into account upper- and lower-case alternate spellings.
 var playerDivision=prompt("Next, please enter your current division within the " + playerTier + " tier.", "V");
 
@@ -47,3 +47,5 @@ if(playerDivision=="V" || playerDivision=="v"){
 	division =5;
 }else{
 	alert("You did not enter a correct division designation.");
+}
+	console.log(tier, division);
