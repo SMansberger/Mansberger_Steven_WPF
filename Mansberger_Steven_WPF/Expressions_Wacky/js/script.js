@@ -21,7 +21,7 @@ alert("Your sentence has been created! Press ok to continue!");
 
 var arrayOne = ["The " + noun + " will " + verb + " over the " + directObj + "." , 
 				"Today, twenty " + noun + " are going to " + verb + " behind the " + directObj + "." ,
-				"Our " + noun + " have to " + verb + " under the " + directObj] + ".";
+				"Our " + noun + " have to " + verb + " under the " + directObj + "."];
 
 var randomNumber = Math.floor(Math.random() * arrayOne.length);
 var randomSelection = arrayOne[randomNumber];
