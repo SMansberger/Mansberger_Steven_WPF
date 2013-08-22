@@ -22,19 +22,19 @@ alert("We are going to see how many games you must win to become a professional 
 var playerTier=prompt("Please enter your current placement tier (e.g. Silver, Gold, Platinum...): ", "Bronze");
 
 if(playerTier=="Bronze" || playerTier=="bronze"){ 
-	tier=5;
+	tier=6;
 }else if(playerTier=="Silver" || playerTier=="silver"){
-	tier=4;
+	tier=5;
 }else if(playerTier=="Gold" || playerTier=="gold"){
-	tier=3;
+	tier=4;
 }else if(playerTier=="Platinum" || playerTier=="platinum" || playerTier=="Plat" || playerTier=="plat"){
-	tier=2;
+	tier=3;
 }else if(playerTier=="Diamond" || playerTier=="diamond"){
-	tier=1;
+	tier=2;
 }else if(playerTier=="Challenger" || playerTier=="challenger"){
-	tier=0;
+	tier=1;
 }else{
-	alert("You did not enter a correct tier designation.");
+	//alert("You did not enter a correct tier designation.");
 }
 //prompting user for division placeent. Taking into account upper- and lower-case alternate spellings.
 var playerDivision=prompt("Next, please enter your current division within the " + playerTier + " tier.", "V");
@@ -50,12 +50,14 @@ if(playerDivision=="V" || playerDivision=="v"){
 }else if(playerDivision=="I" || playerDivision=="i"){
 	division=1;
 }else{
-	alert("You did not enter a correct division designation.");
+	//alert("You did not enter a correct division designation.");
 }
 //	console.log(tier, division);
 //used to test user prompts
 if(tier==0 && division==1){
 	alert("Congratulations! You are already in Challenger I and are being considered for professional League competition!");
+//}else if((tier>5 || tier<1) || (division>5 || division<1)){
+	//alert("You did not enter a correct Tier/Division designation.");
 }else{
 
 /*We will need to take into account placement matches required (e.g. winning best of 3 or best of 5 to advance).
@@ -64,7 +66,7 @@ No points are added during these placement matches.
 Five games are required to advance a division and 2 more for placements. 100/(20/game) = 5 + 2 placeents = 7 games per division.\
 Taking into account 3 games to advance a tier, we conclude that you need 36 games to advance from division V of one tier to division I of the next. 7 games required to advance from Gold II to Gold I and 8 to advance from Gold I to Platinum V. 7 + 8, or, (7*2) + 1 */
 
-gamesRequired = ((tier-1) * 36 + (division * 7) + 1);
+gamesRequired = (((tier-1) * 36) + (division * 7) + 1);
 
 alert("If you win " + gamesRequired + " games, you will have a chance of going pro! Nice Job!");
 
