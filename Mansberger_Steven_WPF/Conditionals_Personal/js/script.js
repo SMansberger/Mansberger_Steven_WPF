@@ -21,15 +21,15 @@ alert("We are going to see how many games you must win to become a professional 
 var playerTier=prompt("Please enter your current placement tier (e.g. Silver, Gold, Platinum...): ", "Bronze");
 
 if(playerTier=="Bronze" || playerTier=="bronze"){ 
-	tier = 1;
+	tier=5;
 }else if(playerTier=="Silver" || playerTier=="silver"){
-	tier = 2;
+	tier=4;
 }else if(playerTier=="Gold" || playerTier=="gold"){
-	tier = 3;
+	tier=3;
 }else if(playerTier=="Platinum" || playerTier=="platinum" || playerTier=="Plat" || playerTier=="plat"){
-	tier = 4;
+	tier=2;
 }else if(playerTier=="Challenger" || playerTier=="challenger"){
-	tier = 5;
+	tier=1;
 }else{
 	alert("You did not enter a correct tier designation.");
 }
@@ -37,23 +37,28 @@ if(playerTier=="Bronze" || playerTier=="bronze"){
 var playerDivision=prompt("Next, please enter your current division within the " + playerTier + " tier.", "V");
 
 if(playerDivision=="V" || playerDivision=="v"){
-	division = 1;
+	division=5;
 }else if(playerDivision=="IV" || playerDivision=="iv"){
-	division =2;
+	division=4;
 }else if(playerDivision=="III" || playerDivision=="iii"){
-	division =3;
+	division=3;
 }else if(playerDivision=="II" || playerDivision=="ii"){
-	division =4;
+	division=2;
 }else if(playerDivision=="I" || playerDivision=="i"){
-	division =5;
+	division=1;
 }else{
 	alert("You did not enter a correct division designation.");
 }
 //	console.log(tier, division);
 //used to test user prompts
+if(tier==1 && division==1){
+	alert("Congratulations! You are already in Challenger I and are being considered for professional League competition!");
+}else{
 
 /*We will need to take into account placement matches required (e.g. winning best of 3 or best of 5 to advance).
 These values will be added separately to the proper variable at the end of the script so as to not skew the gamesRequired calculations.
 No points are added during these placement matches*/
 
+placementGames = (tier
 
+}
