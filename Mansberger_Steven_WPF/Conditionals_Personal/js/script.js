@@ -54,10 +54,17 @@ if(playerDivision=="V" || playerDivision=="v"){
 }
 //	console.log(tier, division);
 //used to test user prompts
+
+/*attempted complex if((tier>5 || tier<1) || ((division>5 || division<1)){
+}
+Did not function. Unsure if you cannot add multiple conditions as with Java or not.
+*/
 if(tier==0 && division==1){
 	alert("Congratulations! You are already in Challenger I and are being considered for professional League competition!");
-//}else if((tier>5 || tier<1) || (division>5 || division<1)){
-	//alert("You did not enter a correct Tier/Division designation.");
+}else if((tier>5 || tier<1){
+	alert("You did not enter a correct Tier/Division designation.");
+}else if{(division>5 || division<1){
+	alert("You did not enter a correct Tier/Division designation.");
 }else{
 
 /*We will need to take into account placement matches required (e.g. winning best of 3 or best of 5 to advance).
