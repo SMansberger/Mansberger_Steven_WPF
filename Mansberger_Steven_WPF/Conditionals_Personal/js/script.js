@@ -12,8 +12,8 @@ Once you reach 100 points of the highest division of a tier, such as, Silver I, 
 We will assume you win 20 points per game, for the sake of Math =)
 We will also assume each player beings with 0 points for each given division within their tier*/
 
-var tier = 1;
-var division = 1;
+var tier = 0;
+var division = 0;
 var gamesRequired = 1;
 var placementGames = 1;
 alert("We are going to see how many games you must win to become a professional League of Legends Player!");
@@ -61,9 +61,9 @@ Did not function. Unsure if you cannot add multiple conditions as with Java or n
 */
 if(tier==0 && division==1){
 	alert("Congratulations! You are already in Challenger I and are being considered for professional League competition!");
-}else if((tier>5 || tier<1){
+}else if(tier>6 || tier<1){
 	alert("You did not enter a correct Tier/Division designation.");
-}else if{(division>5 || division<1){
+}else if(division>5 || division<1){
 	alert("You did not enter a correct Tier/Division designation.");
 }else{
 
@@ -75,6 +75,7 @@ Taking into account 3 games to advance a tier, we conclude that you need 36 game
 
 gamesRequired = (((tier-1) * 36) + (division * 7) + 1);
 
+console.log("If you win " + gamesRequired + " games, you will have a chance of going pro! Nice Job!");
 alert("If you win " + gamesRequired + " games, you will have a chance of going pro! Nice Job!");
 
 }
