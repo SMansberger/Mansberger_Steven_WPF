@@ -16,7 +16,7 @@ alert("We are going to see how many games you must win to become a professional 
 
 var playerTier=prompt("Please enter your current placement tier (e.g. Silver, Gold, Platinum...): ", "Bronze");
 
-if (playerTier=="Bronze" || playerTier=="bronze"){ 
+if(playerTier=="Bronze" || playerTier=="bronze"){ 
 	tier = 1;
 }else if(playerTier=="Silver" || playerTier=="silver"){
 	tier = 2;
@@ -24,7 +24,13 @@ if (playerTier=="Bronze" || playerTier=="bronze"){
 	tier = 3;
 }else if(playerTier=="Platinum" || playerTier=="platinum" || playerTier=="Plat" || playerTier=="plat"){
 	tier = 4;
-}else if(playerTier=="
+}else if(playerTier=="Challenger" || playerTier=="challenger"){
+	tier = 5;
+}else{
+	alert("You did not enter a correct tier designation.");
 
 var playerDivision=prompt("Next, please enter your current division within the " + playerTier + " tier.", "V");
 
+if(playerDivision=="V" || playerDivision=="v"){
+	division = 1;
+}else if
