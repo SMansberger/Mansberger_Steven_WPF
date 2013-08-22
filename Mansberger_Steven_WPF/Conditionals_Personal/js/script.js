@@ -9,10 +9,22 @@ To become considered for a pro team, you must make it to the highest division of
 Points are awareded for each game won. You must reach a total of 100 points in a division to place into the next division.
 Once you have earned 100 points to place, you must win the next 2 out of 3 games to advance. 
 Once you reach 100 points of the highest division of a tier, such as, Silver I, you must win 3 of the next 5 games to place into Gold V.*/
-
+var tier = 1;
+var division = 1;
+var gamesRequired = 1;
 alert("We are going to see how many games you must win to become a professional League of Legends Player!");
 
-var playerTier=prompt("Please enter your current placement tier (e.g. Silver, Gold, Platinum..): ", "Bronze");
+var playerTier=prompt("Please enter your current placement tier (e.g. Silver, Gold, Platinum...): ", "Bronze");
 
-var playerDivision=prompt("Next, please enter your current division within the " + playerTier + " tier.");
+if (playerTier=="Bronze" || playerTier=="bronze"){ 
+	tier = 1;
+}else if(playerTier=="Silver" || playerTier=="silver"){
+	tier = 2;
+}else if(playerTier=="Gold" || playerTier=="gold"){
+	tier = 3;
+}else if(playerTier=="Platinum" || playerTier=="platinum" || playerTier=="Plat" || playerTier=="plat"){
+	tier = 4;
+}else if(playerTier=="
+
+var playerDivision=prompt("Next, please enter your current division within the " + playerTier + " tier.", "V");
 
