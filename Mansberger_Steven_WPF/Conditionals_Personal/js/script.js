@@ -48,4 +48,9 @@ if(playerDivision=="V" || playerDivision=="v"){
 }else{
 	alert("You did not enter a correct division designation.");
 }
-	console.log(tier, division);
+//	console.log(tier, division);
+//used to test user prompts
+
+/*We will need to take into account placement matches required (e.g. winning best of 3 or best of 5 to advance).
+These values will be added separately to the proper variable at the end of the script so as to not skew the gamesRequired calculations*/
+
