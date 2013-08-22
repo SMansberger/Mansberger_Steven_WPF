@@ -61,12 +61,10 @@ Did not function. Unsure if you cannot add multiple conditions as with Java or n
 */
 if(tier==0 && division==1){
 	alert("Congratulations! You are already in Challenger I and are being considered for professional League competition!");
-}else if((tier==1) && (division==2)){
-	
-	gamesRequired = 7;
+}else if(tier==1){
+	gamesRequired = (division-1) * 7;
 	console.log("If you win " + gamesRequired + " games, you will have a chance of going pro! Nice Job!");
 	alert("If you win " + gamesRequired + " games, you will have a chance of going pro! Nice Job!");
-	
 }else if(tier>6 || tier<1){
 	alert("You did not enter a correct Tier/Division designation.");
 }else if(division>5 || division<1){
@@ -79,8 +77,7 @@ No points are added during these placement matches.
 Five games are required to advance a division and 2 more for placements. 100/(20/game) = 5 + 2 placeents = 7 games per division.\
 Taking into account 3 games to advance a tier, we conclude that you need 36 games to advance from division V of one tier to division I of the next. 7 games required to advance from Gold II to Gold I and 8 to advance from Gold I to Platinum V. 7 + 8, or, (7*2) + 1 */
 
-gamesRequired = (((tier-1) * 36) + (division * 7) + 1);
-
+gamesRequired = (((tier-1) * 36) + (division * 7) + 1) - 8;
 console.log("If you win " + gamesRequired + " games, you will have a chance of going pro! Nice Job!");
 alert("If you win " + gamesRequired + " games, you will have a chance of going pro! Nice Job!");
 
