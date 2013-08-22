@@ -14,6 +14,7 @@ We will assume you win 20 points per game, for the sake of Math =)*/
 var tier = 1;
 var division = 1;
 var gamesRequired = 1;
+var placementGames = 1;
 alert("We are going to see how many games you must win to become a professional League of Legends Player!");
 
 //prompting user for tier placement. Taking into account some users may not capitalize letters and may abbreviate the "Platinum" tier name.
@@ -52,5 +53,7 @@ if(playerDivision=="V" || playerDivision=="v"){
 //used to test user prompts
 
 /*We will need to take into account placement matches required (e.g. winning best of 3 or best of 5 to advance).
-These values will be added separately to the proper variable at the end of the script so as to not skew the gamesRequired calculations*/
+These values will be added separately to the proper variable at the end of the script so as to not skew the gamesRequired calculations.
+No points are added during these placement matches*/
+
 
