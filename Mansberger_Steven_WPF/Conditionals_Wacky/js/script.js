@@ -1,3 +1,13 @@
 /* Steven Mansberger
 08.20.2013
 Conditional_Wacky */
+
+/*this program will run to determine if you drink enough water in a day!
+it is suggested that men drink at least 3 litres of water a day and women drink 2.2 litres
+First, we will prompt the user whether they are male or female and then we will utilize ternaries to determine if the amount of water they drink is adequate
+For simplicity's sake, we are not going to decide if they drink too much water in a given day. Maybe in the future :) */
+
+var gender = prompt("I will let you know if you drink enough water! First, are you male or female?", neutral);
+var water = prompt("How much water do you drink a day (in ounces)?", 0);
+
+if(gender==male
