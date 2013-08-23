@@ -10,8 +10,9 @@ For simplicity's sake, we are not going to decide if they drink too much water i
 var gender = prompt("I will let you know if you drink enough water! First, are you male or female?", "male");
 var water = prompt("How much water do you drink a day (in ounces)?", 0);
 
+
 if(gender=="male"){
-	(water>=101.4) ? console.log("You drink plenty of water! Keep it up!") : console.log("You should drink at least "+ (101.4 - water) + "oz more water per day!");
+	(water>=101.4) ? console.log("You drink plenty of water! Keep it up!")  : (water>=0) ? console.log("You should drink at least "+ (101.4 - water) + "oz more water per day!") : console.log("Please enter a positive value of water.");
 }else if(gender=="female"){
 	(water>=74.4) ? console.log("You drink plenty of water! Keep it up!") : console.log("You should drink at least "+ (74.4 - water) + "oz more water per day!");
 }else{
