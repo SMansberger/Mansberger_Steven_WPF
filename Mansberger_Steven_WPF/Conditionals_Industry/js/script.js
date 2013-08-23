@@ -12,9 +12,13 @@ var media = prompt("If you have an .mp3 file, please enter 1 \nIf you have an .a
 alert("What kind of media are you trying to store the file on?");
 var storage = prompt("If you are trying to use a 3.5\" floppy, please enter 1 \nIf you are trying to use an 4GB USB drive, please enter 2 \nIf you are trying to use a 9.4GB DVD, please enter 3 \nIf you are trying to use a 25GB Blu-ray Disc, please enter 4");
  
- storage==1 ? console.log("Sorry, that file will not fit on a 3.5\" floppy disk!") : console.log("");
  
- 	   if(media==1 && storage==2){
+ //(storage<=1) ? console.log("Sorry, that file will not fit on a 3.5\" floppy disk!") : console.log("");
+ //will insert ternary inside Conditionals_Wacky file. Happy with if-else progression and do not wish to alter
+	  
+	   if(storage==1){
+	 console.log("Sorry, that file will not fit on a 3.5\" floppy disk!");
+ }else if(media==1 && storage==2){
 	 console.log("Your .mp3 file will fit on the USB drive and you will have approx. 4092MB of free space left!");
  }else if(media==1 && storage==3){
 	 console.log("Your .mp3 file will fit on the DVD and, you will have 9.4GB of free space left!");
