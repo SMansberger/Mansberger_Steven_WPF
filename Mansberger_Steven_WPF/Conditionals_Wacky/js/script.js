@@ -12,3 +12,5 @@ var water = prompt("How much water do you drink a day (in ounces)?", 0);
 
 
 (gender=="male") ? ((water>=101.4) ? console.log("You drink plenty of water! Keep it up!")  : (water>=0) ? console.log("You should drink at least "+ (101.4 - water) + "oz more water per day!") : console.log("Please enter a positive value for water drunk.")) : (gender=="female") ? ((water>=74.4) ? console.log("You drink plenty of water! Keep it up!") : (water>=0) ? console.log("You should drink at least "+ (74.4 - water) + "oz more water per day!") : console.log("Please enter a positive value for water drunk.")) : console.log("Please answer the questions properly, stating your gender and then the amount of water you drink daily.");
+
+//
