@@ -13,6 +13,7 @@ daysToChristmas=Math.round((cmas-today)/(1000*60*60*24));
 
 if (daysToChristmas==0) {
 console.log("Today is Christmas ... Merry Christmas!");
+
 }else if (daysToChristmas>0){
 console.log("There are "+daysToChristmas+" days to Christmas!");
 }
