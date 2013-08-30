@@ -23,6 +23,8 @@ var totalApples = volumeDifference - apples;
 //console.log ("The average apple barrel can hold " + volumeDifference + " apples.");
 if(apples <0){
 	console.log("Please enter a positive number of apples.");
-}else if(totalApples <=0){
+}else if(apples>volumeDifference){
+	console.log("You have filled the barrel with " + (volumeDifference) + " apples, but you have " + (apples - volumeDifference) + " that will not fit.");
+}else if(totalApples >=0){
 	console.log("You can fit " + totalApples + " more apples in the barrel!");
-}else if(
+}
