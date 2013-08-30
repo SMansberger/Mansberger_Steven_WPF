@@ -5,8 +5,7 @@ Functions_Personal */
 /* This will be a basic program to decide how many apples can fit in a semi-cylindrical basket with a height of 28.5 in, 
 a base with diameter of 24in, and a head with diameter of 40 in.
 Average apple volume = 4/3 * 3.14 * r^3*/
-
-var apples = 1;
+var apples = prompt("How many apples are you trying to fit in the barrel?",1);
 var volumeApple = 4 / 3 * 3.14 * 3 * 3 * 3;
 
 var applesBasket = function(){
@@ -17,6 +16,13 @@ var applesBasket = function(){
 	return volumeBarrel;
 }
 
-volumeDifference = applesBasket() / volumeApple;
+var volumeDifference = applesBasket() / volumeApple;
+
+var totalApples = volumeDifference - apples;
 	
-console.log ("The average apple barrel can hold " + volumeDifference + " apples.");
+//console.log ("The average apple barrel can hold " + volumeDifference + " apples.");
+if(apples <0){
+	console.log("Please enter a positive number of apples.");
+}else if(totalApples <=0){
+	console.log("You can fit " + totalApples + " more apples in the barrel!");
+}else if(
