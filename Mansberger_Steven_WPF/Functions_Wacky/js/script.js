@@ -7,3 +7,12 @@ Functions_Wacky */
   myDate=new Date(); 
 cmas=Date.parse("Dec 25, "+myDate.getFullYear());
 today=Date.parse(myDate);
+
+//conversion from milliseconds as determined by Date.parse() to number of days and calculating days difference from now til christmas
+daysToChristmas=Math.round((cmas-today)/(1000*60*60*24)); 
+
+if (daysToChristmas==0) {
+console.log("Today is Christmas ... Merry Christmas!");
+}else if (daysToChristmas>0){
+console.log("There are "+daysToChristmas+" days to Christmas!");
+}
